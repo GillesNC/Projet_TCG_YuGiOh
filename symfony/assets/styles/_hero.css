@@ -1,0 +1,6 @@
+.bg-image {
+    background-image: url('https://www.yugioh-card.com/eu/wp-content/uploads/2022/09/WCQ-hero-banner.webp');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+}
