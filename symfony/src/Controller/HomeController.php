@@ -12,12 +12,12 @@ final class HomeController extends AbstractController
     #[Route('/', name: 'home')]
     public function index(YugiohApiService $yugiohApiService): Response
     {
-        $data = $yugiohApiService->getSet('2-Player Starter Deck: Yuya & Declan');
-        dd($data);
+        $datas = $yugiohApiService->getSet();
+        // dd($datas[0]['set_image']);
         
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
-            'data' => $data,
+            'datas' => $datas,
         ]);
     }
 }

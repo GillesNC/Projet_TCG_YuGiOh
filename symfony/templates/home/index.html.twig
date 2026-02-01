@@ -52,18 +52,11 @@
 	{# CARD COLLECTION POPULAIRE #}
 	<section class="container my-5">
 		<h2 class="text-center mb-4">
-			Nos collections populaires
+			Nos sets les plus populaires
 		</h2>
-        <div class="row">
-            <div class="col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="" class="card-img-top" alt="Collection 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Duel Monsters Classic</h5>
-                        <p class="card-text">Revivez les duels classiques avec cette collection incontournable.</p>
-                    </div>
-                </div>
-            </div>
+		<div class="row">
+			{{ include('components/_set.html.twig') }}
+		</div>
 	</section>
 
 	<section class="container my-5">

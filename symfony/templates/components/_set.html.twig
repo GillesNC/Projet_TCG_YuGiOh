@@ -1,0 +1,12 @@
+{% for data in datas %}
+    {{ dump(data) }}
+	<div class="col-md-4 mb-4">
+		<div class="card h-100">
+			<img src="" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title">{{ data.set_name }}</h5>
+                <p class="card-text">{{ data.set_code }}</p>
+            </div>
+		</div>
+	</div>
+{% endfor %}

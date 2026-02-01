@@ -43,7 +43,7 @@ class YugiohApiService
             $responseData = $this->httpClient->request('GET', self::API_URL . '/cardsets.php');
             $data = $responseData->toArray();
 
-            $sets = $data;
+            $sets = array_slice($data, 0, 20);
 
         } catch (\Exception $e) {
             $error = $e->getMessage();  
