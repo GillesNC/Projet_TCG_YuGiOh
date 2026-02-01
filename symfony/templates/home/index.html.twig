@@ -1,0 +1,82 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil
+{% endblock %}
+
+{% block body %}
+	<section class="hero-section">
+		{% include 'components/_hero.html.twig' %}
+	</section>
+
+	<section class="container my-5">
+		<div class="d-flex align-items-center">
+			<div class="text-right container">
+				<h2 class="text-right mb-4">TCG Yu-Gi-Oh - Une communauté passionnée de joueurs</h2>
+				<p class="text-right">Découvrez une vaste collection de cartes, échangez avec d'autres passionnés et améliorez votre deck pour dominer vos adversaires.</p>
+				<div class="text-right mt-4">
+					<a href="#" class="btn btn-primary btn-lg">Explorer les cartes</a>
+				</div>
+			</div>
+			<div class="text-left container">
+				<img src="https://static0.thegamerimages.com/wordpress/wp-content/uploads/wm/2025/03/a-collage-of-pyro-monsters-from-the-yu-gi-oh-tcg.jpg?w=1600&h=900&fit=crop" alt="Yu-Gi-Oh Cards" class="img-fluid rounded-3">
+			</div>
+		</div>
+	</section>
+
+	<section class="container my-5">
+		{% include 'components/_carrousel.html.twig' %}
+	</section>
+
+	<section class="container my-5 bg-dark text-white p-5 rounded">
+		<h2 class="text-center mb-4">Pourquoi choisir TCG Yu-Gi-Oh ?</h2>
+		<div class="row">
+			<div class="col-md-4 text-center">
+				<i class="bi bi-collection-play h1 mb-3 text-warning"></i>
+				<h4 class="mb-3 text-warning">Large Collection</h4>
+				<p>Accédez à une vaste sélection de cartes Yu-Gi-Oh pour tous les styles de jeu.</p>
+			</div>
+			<div class="col-md-4 text-center">
+				<i class="bi bi-people h1 mb-3 text-warning"></i>
+				<h4 class="mb-3 text-warning">Communauté Active</h4>
+				<p>Rejoignez une communauté passionnée de joueurs et échangez des stratégies.</p>
+			</div>
+			<div class="col-md-4 text-center">
+				<i class="bi bi-trophy h1 mb-3 text-warning"></i>
+				<h4 class="mb-3 text-warning">Compétitions Excitantes</h4>
+				<p>Participez à des tournois et montrez vos compétences pour gagner des prix.</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="container my-5">
+		<h2 class="text-center mb-4">
+			Nos collections populaires
+		</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81b6j0nKJDL._AC_SL1500_.jpg" class="card-img-top" alt="Collection 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Duel Monsters Classic</h5>
+                        <p class="card-text">Revivez les duels classiques avec cette collection incontournable.</p>
+                    </div>
+                </div>
+            </div>
+	</section>
+
+	<section class="container my-5">
+		<div class="d-flex align-items-center">
+			<div class="text-right container">
+				<h2 class="text-right mb-4">Rejoignez-nous dès aujourd'hui !</h2>
+				<p class="text-right">Inscrivez-vous maintenant et commencez votre aventure dans le monde passionnant de Yu-Gi-Oh.</p>
+				<div class="text-right mt-4">
+					<a href="#" class="btn btn-primary btn-lg">S'inscrire</a>
+				</div>
+			</div>
+			<div class="text-left container">
+				<img src="https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2024/12/Yu-Gi-Oh-Early-Days-Collection-Banner-Art.jpg" alt="Yu-Gi-Oh Cards" class="img-fluid rounded-3">
+			</div>
+		</div>
+	</section>
+
+{% endblock %}
