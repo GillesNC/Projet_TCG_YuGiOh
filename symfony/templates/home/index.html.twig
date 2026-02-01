@@ -4,6 +4,7 @@
 {% endblock %}
 
 {% block body %}
+	{# {{ dump(data) }} #}
 	<section class="hero-section">
 		{% include 'components/_hero.html.twig' %}
 	</section>
@@ -48,6 +49,7 @@
 		</div>
 	</section>
 
+	{# CARD COLLECTION POPULAIRE #}
 	<section class="container my-5">
 		<h2 class="text-center mb-4">
 			Nos collections populaires
@@ -55,7 +57,7 @@
         <div class="row">
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
-                    <img src="https://images-na.ssl-images-amazon.com/images/I/81b6j0nKJDL._AC_SL1500_.jpg" class="card-img-top" alt="Collection 1">
+                    <img src="" class="card-img-top" alt="Collection 1">
                     <div class="card-body">
                         <h5 class="card-title">Duel Monsters Classic</h5>
                         <p class="card-text">Revivez les duels classiques avec cette collection incontournable.</p>
