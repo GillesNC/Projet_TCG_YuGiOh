@@ -13,8 +13,8 @@ final class HomeController extends AbstractController
     public function index(YugiohApiService $yugiohApiService): Response
     {
         $datas = $yugiohApiService->getSet();
-        // dd($datas[0]['set_image']);
-        
+        //dd($datas);
+
         return $this->render('home/index.html.twig', [
             'controller_name' => 'HomeController',
             'datas' => $datas,

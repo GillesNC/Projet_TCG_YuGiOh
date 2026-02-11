@@ -19,7 +19,7 @@ class YugiohApiService
             $card = $data;
 
         } catch (\Exception $e) {
-            $error = $e->getMessage();  
+            $error = $e->getMessage();
             return $error;
         }
         return $card;
@@ -32,7 +32,7 @@ class YugiohApiService
             $data = $responseData->toArray();
 
         } catch (\Exception $e) {
-            $error = $e->getMessage();  
+            $error = $e->getMessage();
             return $error;
         }
         return $data;
@@ -43,27 +43,13 @@ class YugiohApiService
             $responseData = $this->httpClient->request('GET', self::API_URL . '/cardsets.php');
             $data = $responseData->toArray();
 
-            $sets = array_slice($data, 0, 20);
+            $sets = array_slice($data, 0, 6);
+            //$sets = array_rand($data, 6);
 
         } catch (\Exception $e) {
-            $error = $e->getMessage();  
+            $error = $e->getMessage();
             return $error;
         }
         return $sets;
-    }
-
-    public function getRandomCard()
-    {
-        try {
-            $responseData = $this->httpClient->request('GET', self::API_URL . '/randomcard.php');
-            $data = $responseData->toArray();
-
-            $card = $data;
-
-        } catch (\Exception $e) {
-            $error = $e->getMessage();  
-            return $error;
-        }
-        return $card;
     }
 }
