@@ -10,5 +10,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/app.css';
 import './styles/_hero.css';
 import './styles/_carrousel.css';
+import './styles/_card.css'
 
 console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');

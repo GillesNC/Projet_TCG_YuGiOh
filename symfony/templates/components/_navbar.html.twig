@@ -15,20 +15,31 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#">Chercher une carte</a>
 					</li>
+					{% if app.user %}
+						<li class="nav-item">
+							<a class="nav-link" href="#">Ma collection</a>
+						</li>
+					{% endif %}
 					<li class="nav-item">
-						<a class="nav-link" href="#">Ma collection</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">
+						<a class="nav-link" href="https://github.com/GillesNC">
 							<i class="fab fa-github"></i>
 						</a>
 					</li>
-					<li class="nav-item">
-						<a class="btn btn-outline-warning ms-2" href="#">Connexion</a>
-					</li>
-					<li class="nav-item">
-						<a class="btn btn-primary ms-2" href="#">Inscription</a>
-					</li>
+					{% if app.user %}
+						<li class="nav-item">
+							<a class="btn btn-warning ms-2 bi bi-person-fill" href="{{ path('home') }}"></a>
+						</li>
+						<li class="nav-item">
+							<a class="btn btn-outline-danger ms-2" href="{{ path('app_logout') }}">Déconnexion</a>
+						</li>
+					{% else %}
+						<li class="nav-item">
+							<a class="btn btn-outline-warning ms-2" href="{{ path('app_login') }}">Connexion</a>
+						</li>
+						<li class="nav-item">
+							<a class="btn btn-primary ms-2" href="{{ path('register') }}">Inscription</a>
+						</li>
+					{% endif %}
 				</ul>
 			</div>
 		</div>

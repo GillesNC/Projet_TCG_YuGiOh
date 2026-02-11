@@ -2,8 +2,8 @@
 	<div class=" d-flex justify-content-center align-items-center h-100">
 		<div class="d-flex justify-content-center align-items-center h-100">
 			<div class="text-white">
-				<h1 class="mb-3">Bienvenue sur notre site de cartes Yu-Gi-Oh!</h1>
-				<a data-mdb-ripple-init class="btn btn-primary btn-lg" href="#!" role="button">Collection populaire</a>
+				<h1 class="mb-3">{{ title|default('Bienvenue sur TCG Yu-Gi-Oh') }}</h1>
+				<a data-mdb-ripple-init class="btn btn-primary btn-lg" href="{{ buttonLink|default('home') }}" role="button">{{ buttonText|default('Collection populaire') }}</a>
 			</div>
 		</div>
 	</div>

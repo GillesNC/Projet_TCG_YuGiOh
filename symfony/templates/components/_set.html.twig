@@ -1,0 +1,19 @@
+{% for data in datas %}
+	<div class="col-md-4 mb-4">
+		<div class="card h-100 border-2">
+			{% if data.set_image is defined %}
+				<img src="{{ data.set_image }}" class="card-img-top" alt="{{ data.set_name }}">
+			{% else %}
+				<div class="card-img-top bg-secondary d-flex align-items-center justify-content-center">
+					<span class="text-white">Image non disponible</span>
+				</div>
+			{% endif %}
+            <div class="card-body">
+                <h5 class="card-title text-primary">{{ data.set_name }}</h5>
+                <p class="card-text">{{ data.set_code }}</p>
+                <p class="card-text">Nombre de cartes : {{ data.num_of_cards }}</p>
+                <p class="card-text">Date de sortie : {{ data.tcg_date }}</p>
+            </div>
+		</div>
+	</div>
+{% endfor %}
